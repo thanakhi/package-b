@@ -4,7 +4,7 @@ description: "A Flutter package providing UI components and utilities for iOS ap
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.0
+version: 1.0.3
 homepage: https://github.com/your-username/main_app1
 
 environment:
@@ -15,10 +15,7 @@ dependencies:
   flutter:
     sdk: flutter
   # Add dependency on package_a to demonstrate package-to-package dependencies
-  package_a:
-    git:
-      url: https://github.com/thanakhi/package-a.git
-      ref: main
+  package_a: ^1.0.2
 
 dev_dependencies:
   flutter_test:

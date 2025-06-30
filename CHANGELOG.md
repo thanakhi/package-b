@@ -1,3 +1,13 @@
+## 1.0.3
+
+ - Bump "package_b" to `1.0.3`.
+
+## 1.0.2
+
+ - Update a dependency to the latest release.
+
+## 1.0.1
+
 ## 1.0.0
 
 * Initial release of package_b
