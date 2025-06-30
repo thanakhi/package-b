@@ -84,10 +84,7 @@ class _ExampleHomePageState extends State<ExampleHomePage> {
               ),
               const SizedBox(height: 20),
               if (_result != null)
-                DataCard(
-                  result: _result!,
-                  title: 'Calculation Results',
-                ),
+                DataCard(result: _result!, title: 'Calculation Results'),
             ],
           ),
         ),

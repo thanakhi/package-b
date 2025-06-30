@@ -65,7 +65,10 @@ void main() {
       final stringRepresentation = result.toString();
 
       // Assert
-      expect(stringRepresentation, equals('DataResult(sum: 15, average: 3.0, count: 5)'));
+      expect(
+        stringRepresentation,
+        equals('DataResult(sum: 15, average: 3.0, count: 5)'),
+      );
     });
   });
 }

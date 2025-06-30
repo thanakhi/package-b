@@ -22,10 +22,10 @@ import 'package:package_a1/package_a1.dart';
 class DataResult {
   /// The sum of all processed numbers.
   final int sum;
-  
+
   /// The average of all processed numbers.
   final double average;
-  
+
   /// The count of processed numbers.
   final int count;
 
@@ -37,7 +37,8 @@ class DataResult {
   });
 
   @override
-  String toString() => 'DataResult(sum: $sum, average: $average, count: $count)';
+  String toString() =>
+      'DataResult(sum: $sum, average: $average, count: $count)';
 }
 
 /// A data manager utility class that processes lists of numbers.
@@ -68,12 +69,8 @@ class DataManager {
     }
 
     final average = sum / numbers.length;
-    
-    return DataResult(
-      sum: sum,
-      average: average,
-      count: numbers.length,
-    );
+
+    return DataResult(sum: sum, average: average, count: numbers.length);
   }
 
   /// Increments each number in the list by one using Calculator.addOne().
@@ -95,7 +92,9 @@ class DataManager {
   /// final result = manager.multiplyAll([1, 2, 3], 3); // Returns [3, 6, 9]
   /// ```
   List<int> multiplyAll(List<int> numbers, int factor) {
-    return numbers.map((number) => _calculator.multiply(number, factor)).toList();
+    return numbers
+        .map((number) => _calculator.multiply(number, factor))
+        .toList();
   }
 }
 
@@ -103,16 +102,12 @@ class DataManager {
 class DataCard extends StatelessWidget {
   /// The data result to display.
   final DataResult result;
-  
+
   /// Optional title for the card.
   final String? title;
 
   /// Creates a new [DataCard] widget.
-  const DataCard({
-    super.key,
-    required this.result,
-    this.title,
-  });
+  const DataCard({super.key, required this.result, this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -147,9 +142,21 @@ class DataCard extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              _buildStatItem('Count', '${result.count}', CupertinoColors.systemBlue),
-              _buildStatItem('Sum', '${result.sum}', CupertinoColors.systemGreen),
-              _buildStatItem('Average', result.average.toStringAsFixed(1), CupertinoColors.systemOrange),
+              _buildStatItem(
+                'Count',
+                '${result.count}',
+                CupertinoColors.systemBlue,
+              ),
+              _buildStatItem(
+                'Sum',
+                '${result.sum}',
+                CupertinoColors.systemGreen,
+              ),
+              _buildStatItem(
+                'Average',
+                result.average.toStringAsFixed(1),
+                CupertinoColors.systemOrange,
+              ),
             ],
           ),
         ],
