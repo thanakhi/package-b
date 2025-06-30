@@ -16,7 +16,9 @@ dependencies:
     sdk: flutter
   # Add dependency on package_a to demonstrate package-to-package dependencies
   package_a:
-    path: ../package-a
+    git:
+      url: https://github.com/thanakhi/package-a.git
+      ref: main
 
 dev_dependencies:
   flutter_test:
