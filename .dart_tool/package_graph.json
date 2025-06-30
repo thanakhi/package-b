@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "dependencies": [
         "flutter",
-        "package_a1"
+        "package_a"
       ],
       "devDependencies": [
         "flutter_lints",
@@ -16,10 +16,11 @@
       ]
     },
     {
-      "name": "package_a1",
+      "name": "package_a",
       "version": "1.0.0",
       "dependencies": [
-        "flutter"
+        "flutter",
+        "package_b"
       ]
     },
     {

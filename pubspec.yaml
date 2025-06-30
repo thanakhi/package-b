@@ -14,8 +14,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  # Add dependency on package_a1 to demonstrate package-to-package dependencies
-  package_a1:
+  # Add dependency on package_a to demonstrate package-to-package dependencies
+  package_a:
     path: ../package-a
 
 dev_dependencies:

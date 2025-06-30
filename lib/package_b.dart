@@ -16,7 +16,7 @@
 library;
 
 import 'package:flutter/cupertino.dart';
-import 'package:package_a1/package_a1.dart';
+import 'package:package_a/package_a.dart';
 
 /// A data processing result class that holds calculation results.
 class DataResult {

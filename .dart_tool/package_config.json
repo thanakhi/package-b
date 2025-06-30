@@ -98,7 +98,7 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "package_a1",
+      "name": "package_a",
       "rootUri": "../../package-a",
       "packageUri": "lib/",
       "languageVersion": "3.8"
